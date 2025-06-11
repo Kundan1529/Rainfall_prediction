@@ -13,36 +13,35 @@ This repository presents a machine learning-based solution for predicting rainfa
      * To enhance the performance of the Random Forest Classifier, a grid search was performed to identify the optimal combination of hyperparameters. This step helps in improving model generalization and avoiding overfittin
      * This parameter grid was used with GridSearchCV to explore various combinations:
 
-        n_estimators: Number of trees in the forest.
+     * n_estimators: Number of trees in the forest.
 
-        max_features: The number of features to consider when looking for the best split.
+     * max_features: The number of features to consider when looking for the best split. 
+     * max_depth: The maximum depth of the trees (controls model complexity).
 
-        max_depth: The maximum depth of the trees (controls model complexity).
+     * min_samples_split: Minimum number of samples required to split an internal node.
 
-        min_samples_split: Minimum number of samples required to split an internal node.
+     * min_samples_leaf: Minimum number of samples required to be at a leaf node.
 
-        min_samples_leaf: Minimum number of samples required to be at a leaf node.
-#📈 Results
+  #  📈 Results
    *Test Accuracy: 74.47%
 
-   Confusion Matrix: Correctly classified 35 out of 47 instances
+    Confusion Matrix: Correctly classified 35 out of 47 instances
 
-  Precision & Recall:
+    Precision & Recall:
 
-  Class 0: Precision = 0.77, Recall = 0.71
+    Class 0: Precision = 0.77, Recall = 0.71
 
-  Class 1: Precision = 0.72, Recall = 0.78
+    Class 1: Precision = 0.72, Recall = 0.78
 
-  F1-Score: Balanced performance across both classes
 
   Overall: The model shows good generalization with balanced class-wise metrics.
 
 
 # 🧠 Tools & Technologies
-Python
-Pandas & NumPy
-Scikit-learn
-Matplotlib / Seaborn
+  * Python
+  * Pandas & NumPy
+  * Scikit-learn
+  * Matplotlib / Seaborn
 
 
 
